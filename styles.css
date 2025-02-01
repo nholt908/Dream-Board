@@ -1,50 +1,51 @@
 @media screen and (max-width:700px) {
     .container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;    
-        justify-content: center;  
-    }
-
-    img{
-        max-width: 100%;
+        gap: 15px;
     }
     
     .item{
-        background-color: paleturquoise;
-        border: 2px solid turquoise;
-        border-radius: 5px;
         padding: 2%;
-        margin: 1.5%;
         width: 80%;
-        text-align: center;
         font-size: 18px;
+    }
+}
+
+@media screen and (min-width:700px) {
+
+    .container{
+        gap: 20px;
+    }
+
+    .item{
+        padding: 1%;
+        width: 25%;
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    h4{
+        font-size: 22px;
     }
 }
 
 @media screen and (min-width:1000px) {
 
     .container{
-        display: flex;
-        flex-direction: row;
         grid-template-columns: 20% 20% 20%;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    img{
-        max-width: 100%;
+        gap: 25px;
     }
 
     .item{
-        background-color: paleturquoise;
-        border: 2px solid turquoise;
-        border-radius: 5px;
         padding: 1%;
         width: 25%;
-        text-align: center;
         font-size: 24px;
-        margin: 1.5%;
     }
 
     h1{
@@ -60,6 +61,13 @@
     }
 }
 
+.container{
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
 h1, h3, h4, h5{
     text-align: center;
 }
@@ -72,4 +80,22 @@ body{
 
 h5{
     color: darkmagenta;
+}
+
+.item{
+    background-color: paleturquoise;
+    border: 2px solid turquoise;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 5px 4px 3px rgb(28, 103, 95);
+}
+
+.item:hover{
+    background-color: rgb(245, 190, 241);
+    border: 2px solid orchid;
+    box-shadow: 5px 4px 3px rgb(110, 43, 108);
+}
+
+img{
+    max-width: 100%;
 }
